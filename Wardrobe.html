@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Wardrobe</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://cdn.dribbble.com/assets/favicon-99944ff731bb44d3a947810ca8728f177f8deac035a3a4342120c385fd7acb9d.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -21,9 +22,9 @@
           <ul>
             <li><a href="http://127.0.0.1:5500/BnB-Hackathon/main.html">Home</a></li>
             <li><a href="http://127.0.0.1:5500/bnb/BnB-Hackathon/Wardrobe.html" target="_blank">My Wardrobe</a></li>
-            <li><a href="#outfit-planner">Outfit Planner</a></li>
+            
             <li><a href="#sustainability">Sustainability Insights</a></li>
-            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#recommendations">Donate</a></li>
             <li><a href="#settings">Settings</a></li>
           </ul>
         </nav>
@@ -49,7 +50,10 @@
           <button class="button" >Winter</button>
         </div>
         <div class="wardrobe-items" id="wardrobe-items" >
-            <button class="button add-item-btn" onclick="addNewItem()">Add New Item</button>
+          <button class="add-item-btn" onclick="triggerFileUpload()">Add New Item</button>
+
+          <input type="file" id="fileInput" accept="image/*" style="display:none;" onchange="uploadImage(event)">
+          
           <div class="waritem" style="display: flex; flex-wrap: wrap;">
 
           </div>
