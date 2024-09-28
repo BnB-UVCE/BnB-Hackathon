@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Item Manager</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header Section -->
-  <header>
+  <header id="head">
     <div class="logo">Item Manager</div>
     <div class="hamburger" onclick="toggleMenu()">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
@@ -32,9 +35,15 @@
 
   <!-- Home Page -->
   <section id="home">
+    <br>
+    <br>
+    
     <h1>Welcome, Ravi!</h1>
-    <p>Manage your wardrobe smarter, live more sustainably.</p>
-    <button onclick="startOrganizing()">Start Organizing</button>
+    
+    
+   
+    <p id="p1">Manage your wardrobe smarter, live more sustainably.</p>
+    <button id="start-organizing" onclick="startOrganizing()">Start Organizing</button>
 
     <!-- Overview Panel -->
     <div class="overview-panel">
@@ -42,7 +51,7 @@
         <h3>Total Items</h3>
         <p id="total-items">50</p>
       </div>
-      <div class="panel">
+      <div class="panel" id="pannel2">
         <h3>Recently Used</h3>
         <p id="recent-items">5 Items</p>
       </div>
@@ -54,10 +63,10 @@
 
     <!-- Quick Access Buttons -->
     <div class="quick-access">
-      <button onclick="addNewItem()">Add New Items</button>
-      <button onclick="viewWardrobe()">View Wardrobe</button>
-      <button onclick="trackUsage()">Track Usage</button>
-      <button onclick="getOutfitSuggestions()">Outfit Suggestions</button>
+      <button id="b1" onclick="addNewItem()">Add New Items</button>
+      <button id="b2" onclick="viewWardrobe()">View Wardrobe</button>
+      <button  id="b3" onclick="trackUsage()">Track Usage</button>
+      <button id="b4" onclick="getOutfitSuggestions()">Outfit Suggestions</button>
     </div>
   </section>
 

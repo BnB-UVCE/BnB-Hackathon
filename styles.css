@@ -4,20 +4,80 @@
     padding: 0;
     box-sizing: border-box;
   }
+  h1{
+    font-size: 100px;
+    color:#e8445d;
+    font-weight: bold;
+    font-size: "Roboto";
+  }
   
+  #home{
+    height: 100vh;
+
+    width: 100vw;
+  
+    background-image: url("home_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+  #p1{
+    padding-left: 38%;
+    color:#29282d;
+    font-weight: bold;
+  }
+ 
+    /* From Uiverse.io by aasisodiya */ 
+/* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+button {
+  --bg: #000;
+  --hover-bg: pink;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+  #start-organizing{
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+  #start-organizing{
+    margin-left: 43.5%;
+  }
+
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: #fff;
+    background:#e8445d;
+    color: black;
     padding: 10px 20px;
   }
   
@@ -36,9 +96,15 @@
   }
   
   nav ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
   }
+ 
+  nav ul li a:hover {
+    color: white;
+    font-size: 1.2em;
+}
   
   /* Hamburger Menu Styles */
   .hamburger {
@@ -105,7 +171,8 @@
   .overview-panel {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
   
   .panel {
@@ -118,15 +185,22 @@
   .quick-access button, .add-item-btn, .outfit-creation button {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: lightpink;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+   
+
+    
+  }
+  .quick-access{
+    display: flex;
+    justify-content: center;
   }
   
   .quick-access button:hover, .add-item-btn:hover, .outfit-creation button:hover {
-    background-color: #45a049;
+    background-color:pink;
   }
   
   footer {
@@ -134,5 +208,8 @@
     padding: 10px;
     background: #333;
     color: white;
+  }
+  #pannel2{
+    margin-left: 0%;
   }
   
