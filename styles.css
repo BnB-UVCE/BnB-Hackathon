@@ -94,12 +94,16 @@
   
   /* General Styles */
   h1, h2 {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     text-align: center;
+    font-size: 39px;
+    color: #29282d;
+
   }
   
   section {
     padding: 20px;
+    
   }
   
   .overview-panel {
@@ -136,3 +140,119 @@
     color: white;
   }
   
+
+  #wardrobe{
+    padding: 20px;
+   
+    height: 93vh;
+  }
+
+
+  #search-bar{
+    position: relative;
+  }
+
+  .searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  /* From Uiverse.io by alexruix */ 
+
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 700px;
+  
+ }
+ 
+ .input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #e8445d;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: white;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  border-color: rgba(234,76,137,0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+
+  
+
+ }
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: white;
+  width: 1rem;
+  height: 1rem;
+ }
+ 
+
+ .categories{
+  display: flex;
+    gap: 44px;
+    justify-content: center;
+ }
+ 
+ 
+ /* button style */
+ /* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+.button {
+  --bg: #000;
+  --hover-bg: hwb(351 49% 7%);
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+ 
+
+
+/* for card  */
+.card img {
+  width: 241px;
+}
+
+.card{
+  margin-top: 20px;
+  padding: 15px;
+
+}
