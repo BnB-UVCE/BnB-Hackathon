@@ -1,0 +1,338 @@
+/* Basic reset */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 100px;
+    color:#e8445d;
+    font-weight: bold;
+    font-size: "Roboto";
+  }
+  
+  #home{
+    height: 100vh;
+
+    width: 100vw;
+  
+    background-image: url("home_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+  #p1{
+    padding-left: 38%;
+    color:#29282d;
+    font-weight: bold;
+  }
+ 
+    /* From Uiverse.io by aasisodiya */ 
+/* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+button {
+  --bg: #000;
+  --hover-bg: pink;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+  #start-organizing{
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+  #start-organizing{
+    margin-left: 43.5%;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#e8445d;
+    color: black;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+ 
+  nav ul li a:hover {
+    color: white;
+    font-size: 1.2em;
+}
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      padding: 10px;
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  /* General Styles */
+  h1, h2 {
+    margin-bottom: 23px;
+    text-align: center;
+    font-size: 39px;
+    color: #29282d;
+
+  }
+  
+  section {
+    padding: 20px;
+    
+  }
+  
+  .overview-panel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .panel {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-access button, .add-item-btn, .outfit-creation button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: lightpink;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+
+    
+  }
+  .quick-access{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quick-access button:hover, .add-item-btn:hover, .outfit-creation button:hover {
+    background-color:pink;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+  }
+  #pannel2{
+    margin-left: 0%;
+  }
+  
+
+  #wardrobe{
+    padding: 20px;
+   
+    height: 93vh;
+  }
+
+
+  #search-bar{
+    position: relative;
+  }
+
+  .searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+
+  /* From Uiverse.io by alexruix */ 
+
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 700px;
+  
+ }
+ 
+ .input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #e8445d;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: white;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  border-color: rgba(234,76,137,0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+
+  
+
+ }
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: white;
+  width: 1rem;
+  height: 1rem;
+ }
+ 
+
+ .categories{
+  display: flex;
+    gap: 44px;
+    justify-content: center;
+ }
+ 
+ 
+ /* button style */
+ /* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+.button {
+  --bg: #000;
+  --hover-bg: hwb(351 49% 7%);
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+ 
+
+
+/* for card  */
+.card img {
+  width: 241px;
+}
+
+.card{
+  margin-top: 20px;
+  padding: 15px;
+
+}
