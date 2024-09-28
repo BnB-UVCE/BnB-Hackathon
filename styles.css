@@ -333,3 +333,13 @@ button:active {
   padding: 15px;
 
 }
+.slider{
+  height: 50%;
+  width: 50%;
+  display:flex;
+  margin-left: 20%;
+  justify-content: center;
+}
+#video1{
+  margin-left: 320px;
+}
