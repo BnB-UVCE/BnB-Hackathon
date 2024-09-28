@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Item Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Item Manager</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+        <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#wardrobe">My Wardrobe</a></li>
+        <li><a href="#outfit-planner">Outfit Planner</a></li>
+        <li><a href="#sustainability">Sustainability Insights</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <section id="home">
+    <h1>Welcome, Ravi!</h1>
+    <p>Manage your wardrobe smarter, live more sustainably.</p>
+    <button onclick="startOrganizing()">Start Organizing</button>
+
+    <!-- Overview Panel -->
+    <div class="overview-panel">
+      <div class="panel">
+        <h3>Total Items</h3>
+        <p id="total-items">50</p>
+      </div>
+      <div class="panel">
+        <h3>Recently Used</h3>
+        <p id="recent-items">5 Items</p>
+      </div>
+      <div class="panel">
+        <h3>Unused Items</h3>
+        <p id="unused-items">10 Items</p>
+      </div>
+    </div>
+
+    <!-- Quick Access Buttons -->
+    <div class="quick-access">
+      <button onclick="addNewItem()">Add New Items</button>
+      <button onclick="viewWardrobe()">View Wardrobe</button>
+      <button onclick="trackUsage()">Track Usage</button>
+      <button onclick="getOutfitSuggestions()">Outfit Suggestions</button>
+    </div>
+  </section>
+
+  <!-- Wardrobe Page -->
+  <section id="wardrobe">
+    <h2>My Wardrobe</h2>
+    <input type="text" placeholder="Search Items" id="search-bar">
+    <div class="categories">
+      <button>Shirts</button>
+      <button>Pants</button>
+      <button>Accessories</button>
+      <button>Summer</button>
+      <button>Winter</button>
+      <button>Frequently Used</button>
+    </div>
+    <div class="wardrobe-items" id="wardrobe-items"></div>
+    <button class="add-item-btn" onclick="addNewItem()">Add New Item</button>
+  </section>
+
+  <!-- Outfit Planner -->
+  <section id="outfit-planner">
+    <h2>Outfit Planner</h2>
+    <div class="outfit-creation">
+      <div id="wardrobe-items-outfit"></div>
+      <button onclick="createOutfit()">Create Outfit</button>
+    </div>
+    <button onclick="saveOutfit()">Save Outfit</button>
+    <button onclick="wearToday()">Wear This Today</button>
+  </section>
+
+  <!-- Sustainability Insights -->
+  <section id="sustainability">
+    <h2>Sustainability Insights</h2>
+    <div id="usage-tracker"></div>
+    <div id="impact-calculator"></div>
+    <button onclick="showRecommendations()">Sustainable Recommendations</button>
+  </section>
+
+  <!-- Recommendations Page -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="clean-up-suggestions"></div>
+    <div id="outfit-recommendations"></div>
+    <button onclick="donateItems()">Donate</button>
+    <button onclick="recycleItems()">Recycle</button>
+    <button onclick="sellItems()">Sell</button>
+  </section>
+
+  <!-- Settings Page -->
+  <section id="settings">
+    <h2>Settings</h2>
+    <div class="settings-panel">
+      <label for="profile-name">Name:</label>
+      <input type="text" id="profile-name" value="Ravi">
+      <button onclick="updateProfile()">Update Profile</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Personal Item Manager</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
