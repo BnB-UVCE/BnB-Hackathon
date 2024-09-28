@@ -1,7 +1,4 @@
-// Start Organizing
-function startOrganizing() {
-   alert("Let's start organizing your wardrobe!");
- }
+
  
 function thanksfordonating(){
   alert("Thanks for donating . We will pick the item from the location")
@@ -10,42 +7,6 @@ function thanksfordonating(){
   alert("You will be notified if any body is interested")
  }
 
- // Add New Item
- 
- // View Wardrobe
- function viewWardrobe() {
-   alert("Displaying your wardrobe.");
- }
- 
- // Track Usage
- function trackUsage() {
-   alert("Tracking item usage.");
- }
- 
- // Get Outfit Suggestions
- 
- // Create Outfit
- function createOutfit() {
-   alert("Create your outfit by selecting items.");
- }
- 
- // Save Outfit
- function saveOutfit() {
-   alert("Outfit saved.");
- }
- 
- // Wear Today
- function wearToday() {
-   alert("Outfit selected for today.");
- }
- 
- // Show Sustainability Recommendations
- function showRecommendations() {
-   alert("Showing sustainability recommendations.");
- }
- 
- // Donate Items
- 
  
  // Update Profile
  function updateProfile() {
@@ -158,7 +119,7 @@ buttons.forEach(button => {
 
     // Generate HTML for each item in the category
     let itemHTML = items.map(imgSrc => `
-      <div class="card">
+      <div class="cardimg">
         <img src="${imgSrc}" alt="Uploaded item">
       </div>
     `).join('');
@@ -173,25 +134,25 @@ buttons.forEach(button => {
     // Hardcoded examples (for demo purposes)
     if (buttonText === 'shirts') {
       document.querySelector(".waritem").innerHTML += `
-        <div class="card">
+        <div class="cardimg">
           <img src="https://sppsilks.com/image/cache/catalog/silk%20cotton%20shirt/13-550x550.jpg" alt="Shirt">
         </div>
-        <div class="card">
+        <div class="cardimg">
           <img src="https://sppsilks.com/image/cache/catalog/silk%20cotton%20shirt/13-550x550.jpg" alt="Shirt">
         </div>
-        <div class="card">
+        <div class="cardimg">
           <img src="https://sppsilks.com/image/cache/catalog/silk%20cotton%20shirt/13-550x550.jpg" alt="Shirt">
         </div>
       `;
     } else if (buttonText === 'pants') {
       document.querySelector(".waritem").innerHTML += `
-        <div class="card">
+        <div class="cardimg">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxfkno46XtWj1EH3_OhNzAxfgEktg2Hl-dQ&s" alt="Pants">
         </div>
-        <div class="card">
+        <div class="cardimg">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxfkno46XtWj1EH3_OhNzAxfgEktg2Hl-dQ&s" alt="Pants">
         </div>
-        <div class="card">
+        <div class="cardimg">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxfkno46XtWj1EH3_OhNzAxfgEktg2Hl-dQ&s" alt="Pants">
         </div>
       `;
@@ -200,13 +161,13 @@ buttons.forEach(button => {
 
     else if(buttonText === `accessories`) {
 
-      document.querySelector(".waritem").innerHTML += `<div class="card">
+      document.querySelector(".waritem").innerHTML += `<div class="cardimg">
                   <img src="https://5.imimg.com/data5/SELLER/Default/2024/2/391375199/IU/JE/YA/26510561/fossil-autometic-leather-belt-watch.jpg" alt="">
               </div>
-              <div class="card">
+              <div class="cardimg">
                   <img  src="accesories/sonata watch.jpeg" alt="">
               </div>
-              <div class="card">
+              <div class="cardimg">
                   <img  src="https://5.imimg.com/data5/SELLER/Default/2024/2/391375199/IU/JE/YA/26510561/fossil-autometic-leather-belt-watch.jpg" alt="">
               </div>`   
     }
@@ -215,13 +176,13 @@ buttons.forEach(button => {
   
     else if(buttonText === `summer`) {
   
-      document.querySelector(".waritem").innerHTML += `<div class="card">
+      document.querySelector(".waritem").innerHTML += `<div class="cardimg">
                   <img src="https://image.made-in-china.com/2f0j00viouSaDdEcql/New-Summer-Crop-Tops-Women-T-Shirt-Letter-Print-Short-Sleeve-Cotton-Loose-Short-T-Shirt.webp" alt="">
               </div>
-              <div class="card">
+              <div class="cardimg">
                   <img  src="summer/tshirt anime.jpeg" alt="">
               </div>
-              <div class="card">
+              <div class="cardimg">
                   <img  src="summer/tommy.jpeg" alt="">
               </div>`   
     }
@@ -229,13 +190,13 @@ buttons.forEach(button => {
   
     else if(buttonText === `winter`) {
   
-      document.querySelector(".waritem").innerHTML += `<div class="card">
+      document.querySelector(".waritem").innerHTML += `<div class="cardimg">
                   <img src="https://static.fibre2fashion.com/MemberResources/LeadResources/1/2019/2/Seller/19160013/Images/19160013_0_kids-winter-sweater.jpg" alt="">
               </div>
-              <div class="card">
+              <div class="cardimg">
                   <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PbvRHpI-cmMr_uyxfyYSLEyLicp5sjLcMw&s" alt="">
               </div>
-              <div class="card">
+              <div class="cardimg">
                   <img  src="https://www.alamodelabel.in/cdn/shop/files/WhatsAppImage2023-09-25at17.19.48_600x.jpg?v=1695718658" alt="">
               </div>`   
     }

@@ -327,11 +327,11 @@ box-shadow: none;
 
 
 /* for card  */
-.card img {
+.cardimg img {
 width: 241px;
 }
 
-.card{
+.cardimg{
 margin-top: 20px;
 padding: 15px;
 
@@ -426,13 +426,14 @@ box-shadow: none;
 
 
 /* From Uiverse.io by ahmed150up2 */ 
-.card {
+.cardfooter {
 display: flex;
 height: 70px;
 width: 270px;
+
 }
 
-.card svg {
+.cardfooter svg {
 position: absolute;
 display: flex;
 width: 60%;
@@ -445,7 +446,7 @@ z-index: 2;
 cursor: pointer;
 }
 
-.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+.cardfooter .social-link1,.cardfooter .social-link2,.cardfooter .social-link3,.cardfooter .social-link4 {
 position: relative;
 display: flex;
 align-items: center;
@@ -458,26 +459,26 @@ transition: 0.25s;
 border-radius: 50px;
 }
 
-.card svg {
+.cardfooter svg {
 transform: scale(1);
 }
 
-.card .social-link1:hover {
+.cardfooter .social-link1:hover {
 background-color: #1a1e22;
 animation: bounce_613 0.4s linear;
 }
 
-.card .social-link2:hover {
+.cardfooter .social-link2:hover {
 background-color: #0a66c2;
 animation: bounce_613 0.4s linear;
 }
 
-.card .social-link3:hover {
+.cardfooter .social-link3:hover {
 background-color: #0059f7;
 animation: bounce_613 0.4s linear;
 }
 
-.card .social-link4:hover {
+.cardfooter .social-link4:hover {
 background-color: #1d4292;
 animation: bounce_613 0.4s linear;
 }
@@ -504,4 +505,10 @@ animation: bounce_613 0.4s linear;
 
 .card{
 margin-left: 41%;
+}
+
+.d-block{
+  width: 100%;
+  height: 478px;
+
 }
