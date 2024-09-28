@@ -3,336 +3,505 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  h1{
-    font-size: 100px;
-    color:#e8445d;
-    font-weight: bold;
-    font-size: "Roboto";
-  }
-  
-  #home{
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 100px;
+  color:#e8445d;
+  font-weight: bold;
+  font-size: "Roboto";
+}
 
-    width: 100vw;
-  
-    background-image: url("home_img.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-  }
-  #p1{
-    padding-left: 38%;
-    color:#29282d;
-    font-weight: bold;
-  }
- 
-    /* From Uiverse.io by aasisodiya */ 
+#home{
+  height: 100vh;
+
+  width: 100vw;
+
+  background-image: url("home_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#p1{
+  padding-left: 38%;
+  color:#29282d;
+  font-weight: bold;
+}
+
+  /* From Uiverse.io by aasisodiya */ 
 /* From Uiverse.io by satyamchaudharydev */ 
 /* inspired form gumroad website */
 button {
-  --bg: #000;
-  --hover-bg: pink;
-  --hover-text: #000;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-  padding: 0.8em 2em;
-  background: var(--bg);
-  transition: 0.2s;
+--bg: #000;
+--hover-bg: pink;
+--hover-text: #000;
+color: #fff;
+cursor: pointer;
+border: 1px solid var(--bg);
+border-radius: 4px;
+padding: 0.8em 2em;
+background: var(--bg);
+transition: 0.2s;
 }
 
 button:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
+color: var(--hover-text);
+transform: translate(-0.25rem, -0.25rem);
+background: var(--hover-bg);
+box-shadow: 0.25rem 0.25rem var(--bg);
 }
 
 button:active {
-  transform: translate(0);
-  box-shadow: none;
+transform: translate(0);
+box-shadow: none;
 }
 
-  #start-organizing{
-    margin-left: 40%;
-    margin-top: 20px;
-  }
-  #start-organizing{
-    margin-left: 43.5%;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:#e8445d;
-    color: black;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
- 
-  nav ul li a:hover {
-    color: white;
-    font-size: 1.2em;
+#start-organizing{
+  margin-left: 40%;
+  margin-top: 20px;
 }
+#start-organizing{
+  margin-left: 43.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
   
-  /* Hamburger Menu Styles */
-  .hamburger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .hamburger svg {
-    width: 24px;
-    height: 24px;
-  }
-  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#e8445d;
+  color: black;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger svg {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
   .nav-menu {
-    display: flex;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
   }
-  
-  /* Responsive Layout */
-  @media (max-width: 768px) {
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-    }
-  
-    .nav-menu.active {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-      text-align: center;
-    }
-  
-    nav ul li a {
-      padding: 10px;
-      display: block;
-      width: 100%;
-    }
-  }
-  
-  /* General Styles */
-  h1, h2 {
-    margin-bottom: 23px;
-    text-align: center;
-    font-size: 39px;
-    color: #29282d;
 
-  }
-  
-  section {
-    padding: 20px;
-    
-  }
-  
-  .overview-panel {
+  .nav-menu.active {
     display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-    margin-bottom: 20px;
   }
-  
-  .panel {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .quick-access button, .add-item-btn, .outfit-creation button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: lightpink;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-   
 
-    
+  .hamburger {
+    display: block;
   }
-  .quick-access{
-    display: flex;
-    justify-content: center;
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
   }
-  
-  .quick-access button:hover, .add-item-btn:hover, .outfit-creation button:hover {
-    background-color:pink;
-  }
-  
-  footer {
+
+  nav ul li {
+    margin: 10px 0;
     text-align: center;
+  }
+
+  nav ul li a {
     padding: 10px;
-    background: #333;
-    color: white;
+    display: block;
+    width: 100%;
   }
-  #pannel2{
-    margin-left: 0%;
-  }
+}
+
+/* General Styles */
+h1, h2 {
+  margin-bottom: 23px;
+  text-align: center;
+  font-size: 39px;
+  color: #29282d;
+
+}
+
+section {
+  padding: 20px;
   
+}
 
-  #wardrobe{
-    padding: 20px;
-   
-    height: 93vh;
-  }
+.overview-panel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.panel {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quick-access button, .add-item-btn, .outfit-creation button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: lightpink;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+
+  
+}
+.quick-access{
+  display: flex;
+  justify-content: center;
+}
+
+.quick-access button:hover, .add-item-btn:hover, .outfit-creation button:hover {
+  background-color:pink;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+#pannel2{
+  margin-left: 0%;
+}
 
 
-  #search-bar{
-    position: relative;
-  }
+#wardrobe{
+  padding: 20px;
+ 
+  height: 93vh;
+}
 
-  .searchbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 21px;
-  }
 
-  /* From Uiverse.io by alexruix */ 
+#search-bar{
+  position: relative;
+}
+
+.searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+/* From Uiverse.io by alexruix */ 
 
 
 .group {
-  display: flex;
-  line-height: 28px;
-  align-items: center;
-  position: relative;
-  max-width: 700px;
-  
- }
- 
- .input {
-  width: 100%;
-  height: 40px;
-  line-height: 28px;
-  padding: 0 1rem;
-  padding-left: 2.5rem;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  background-color: #e8445d;
-  color: #0d0c22;
-  transition: .3s ease;
- }
- 
- .input::placeholder {
-  color: white;
- }
- 
- .input:focus, input:hover {
-  outline: none;
-  border-color: rgba(234,76,137,0.4);
-  background-color: #fff;
-  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+display: flex;
+line-height: 28px;
+align-items: center;
+position: relative;
+max-width: 700px;
 
-  
+}
 
- }
- 
- .icon {
-  position: absolute;
-  left: 1rem;
-  fill: white;
-  width: 1rem;
-  height: 1rem;
- }
- 
+.input {
+width: 100%;
+height: 40px;
+line-height: 28px;
+padding: 0 1rem;
+padding-left: 2.5rem;
+border: 2px solid transparent;
+border-radius: 8px;
+outline: none;
+background-color: #e8445d;
+color: #0d0c22;
+transition: .3s ease;
+}
 
- .categories{
-  display: flex;
-    gap: 44px;
-    justify-content: center;
- }
- 
- 
- /* button style */
- /* From Uiverse.io by satyamchaudharydev */ 
+.input::placeholder {
+color: white;
+}
+
+.input:focus, input:hover {
+outline: none;
+border-color: rgba(234,76,137,0.4);
+background-color: #fff;
+box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+
+
+
+}
+
+.icon {
+position: absolute;
+left: 1rem;
+fill: white;
+width: 1rem;
+height: 1rem;
+}
+
+
+.categories{
+display: flex;
+  gap: 44px;
+  justify-content: center;
+}
+
+
+/* button style */
+/* From Uiverse.io by satyamchaudharydev */ 
 /* inspired form gumroad website */
 .button {
-  --bg: #000;
-  --hover-bg: hwb(351 49% 7%);
-  --hover-text: #000;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-  padding: 0.8em 2em;
-  background: var(--bg);
-  transition: 0.2s;
+--bg: #000;
+--hover-bg: hwb(351 49% 7%);
+--hover-text: #000;
+color: #fff;
+cursor: pointer;
+border: 1px solid var(--bg);
+border-radius: 4px;
+padding: 0.8em 2em;
+background: var(--bg);
+transition: 0.2s;
 }
 
 .button:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
+color: var(--hover-text);
+transform: translate(-0.25rem, -0.25rem);
+background: var(--hover-bg);
+box-shadow: 0.25rem 0.25rem var(--bg);
 }
 
 .button:active {
-  transform: translate(0);
-  box-shadow: none;
+transform: translate(0);
+box-shadow: none;
 }
 
- 
+
 
 
 /* for card  */
 .card img {
-  width: 241px;
+width: 241px;
 }
 
 .card{
-  margin-top: 20px;
-  padding: 15px;
+margin-top: 20px;
+padding: 15px;
 
+}
+
+
+.donatebtns{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 260px;
+
+}
+
+.form{
+
+margin-top: 15px;
+
+left: 30%;
+max-height: fit-content;
+}
+/* From Uiverse.io by mrhyddenn */
+
+
+.form__group {
+position: relative;
+padding: 20px 0 0;
+width: 100%;
+max-width: 400px;
+margin: 10px auto;
+}
+
+.form__field {
+font-family: inherit;
+width: 100%;
+border: none;
+border-bottom: 2px solid #9b9b9b;
+outline: 0;
+font-size: 17px;
+color: #000000;
+padding: 7px 0;
+background: transparent;
+transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+font-size: 17px;
+cursor: text;
+top: 20px;
+}
+
+.form__label {
+position: absolute;
+top: 0;
+display: block;
+transition: 0.2s;
+font-size: 17px;
+color: #9b9b9b;
+pointer-events: none;
+}
+
+.form__field:focus {
+padding-bottom: 6px;
+font-weight: 700;
+border-width: 3px;
+border-image: linear-gradient(to right, #e8445d, #e8445d);
+border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+position: absolute;
+top: 0;
+display: block;
+transition: 0.2s;
+font-size: 17px;
+color: #e8445d;
+font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+box-shadow: none;
+}
+
+
+
+
+
+
+/* From Uiverse.io by ahmed150up2 */ 
+.card {
+display: flex;
+height: 70px;
+width: 270px;
+}
+
+.card svg {
+position: absolute;
+display: flex;
+width: 60%;
+height: 100%;
+font-size: 24px;
+font-weight: 700;
+opacity: 1;
+transition: opacity 0.25s;
+z-index: 2;
+cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 25%;
+color: whitesmoke;
+font-size: 24px;
+text-decoration: none;
+transition: 0.25s;
+border-radius: 50px;
+}
+
+.card svg {
+transform: scale(1);
+}
+
+.card .social-link1:hover {
+background-color: #1a1e22;
+animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+background-color: #0a66c2;
+animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+background-color: #0059f7;
+animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+background-color: #1d4292;
+animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+40% {
+  transform: scale(1.4);
+}
+
+60% {
+  transform: scale(0.8);
+}
+
+80% {
+  transform: scale(1.2);
+}
+
+100% {
+  transform: scale(1);
+}
+}
+
+
+
+.card{
+margin-left: 41%;
 }
