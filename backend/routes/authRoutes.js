@@ -49,7 +49,7 @@ router.post('/login', async (req, res) => {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    res.status(200).json({ message: 'Login successful', redirectUrl: './main.html' });
+    res.status(200).json({ message: 'Login successful', redirectUrl: '/main.html' });
   } catch (error) {
     console.error('Error in login:', error);
     res.status(500).json({ message: 'Server error' });

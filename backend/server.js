@@ -4,15 +4,23 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
 const db = require('./config/db');
+const path = require('path'); 
 
 const app = express();
 
-// Middlewares
 app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
 app.use('/auth', authRoutes);
+
+// Serve static files from the frontend directory
+app.use(express.static(path.join(__dirname, '../frontend')));
+
+// Fallback route for serving main.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend', 'main.html')); // Serve main.html
+});
 
 // MongoDB connection
 const connectDB = async () => {
@@ -29,8 +37,6 @@ const connectDB = async () => {
 };
 
 connectDB(); // Call the connect function
-
-app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Start the server
 const PORT = process.env.PORT || 5000;
