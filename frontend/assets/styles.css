@@ -204,6 +204,7 @@ section {
 .quick-access{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .quick-access button:hover, .add-item-btn:hover, .outfit-creation button:hover {
@@ -224,7 +225,7 @@ footer {
 #wardrobe{
   padding: 20px;
  
-  height: 93vh;
+  height: max-content;
 }
 
 
@@ -343,7 +344,7 @@ padding: 15px;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 260px;
+gap: 200px;
 
 }
 
