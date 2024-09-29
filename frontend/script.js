@@ -138,10 +138,10 @@ buttons.forEach(button => {
           <img src="https://sppsilks.com/image/cache/catalog/silk%20cotton%20shirt/13-550x550.jpg" alt="Shirt">
         </div>
         <div class="cardimg">
-          <img src="https://sppsilks.com/image/cache/catalog/silk%20cotton%20shirt/13-550x550.jpg" alt="Shirt">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuC3vzZYgW6UUDmtFbCsWIeqAG9JrxomgGhw&s" alt="Shirt">
         </div>
         <div class="cardimg">
-          <img src="https://sppsilks.com/image/cache/catalog/silk%20cotton%20shirt/13-550x550.jpg" alt="Shirt">
+          <img src="https://uniformtailor.in/image/cache/catalog/data/shirts/personalized-executive-shirt/personalized-executive-royal-blue-office-shirt-670x760.png" alt="Shirt">
         </div>
       `;
     } else if (buttonText === 'pants') {
@@ -150,10 +150,10 @@ buttons.forEach(button => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxfkno46XtWj1EH3_OhNzAxfgEktg2Hl-dQ&s" alt="Pants">
         </div>
         <div class="cardimg">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxfkno46XtWj1EH3_OhNzAxfgEktg2Hl-dQ&s" alt="Pants">
+          <img src="https://truewerk.com/cdn/shop/files/t1_werkpants_mens_olive_flat_lay_4825e693-f588-4813-bff0-1d4c46ce82ce.jpg?v=1713822726&width=2400" alt="Pants">
         </div>
         <div class="cardimg">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxfkno46XtWj1EH3_OhNzAxfgEktg2Hl-dQ&s" alt="Pants">
+          <img src="https://media.gettyimages.com/id/173239968/photo/skinny-tight-blue-jeans-on-white-background.jpg?s=612x612&w=gi&k=20&c=QqoFe-m6N_FQKu6KyDVrHUwmKUyh3nkFK8QbDrl3OVM=" alt="Pants">
         </div>
       `;
     }
@@ -165,7 +165,7 @@ buttons.forEach(button => {
                   <img src="https://5.imimg.com/data5/SELLER/Default/2024/2/391375199/IU/JE/YA/26510561/fossil-autometic-leather-belt-watch.jpg" alt="">
               </div>
               <div class="cardimg">
-                  <img  src="accesories/sonata watch.jpeg" alt="">
+                  <img  src="https://goodsdream.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-18-at-6.51.59-PM.jpeg" alt="">
               </div>
               <div class="cardimg">
                   <img  src="https://5.imimg.com/data5/SELLER/Default/2024/2/391375199/IU/JE/YA/26510561/fossil-autometic-leather-belt-watch.jpg" alt="">
@@ -180,10 +180,10 @@ buttons.forEach(button => {
                   <img src="https://image.made-in-china.com/2f0j00viouSaDdEcql/New-Summer-Crop-Tops-Women-T-Shirt-Letter-Print-Short-Sleeve-Cotton-Loose-Short-T-Shirt.webp" alt="">
               </div>
               <div class="cardimg">
-                  <img  src="summer/tshirt anime.jpeg" alt="">
+                  <img  src="/BnB-Hackathon/frontend/assets/summer/tommy.jpeg" alt="">
               </div>
               <div class="cardimg">
-                  <img  src="summer/tommy.jpeg" alt="">
+                  <img  src="/BnB-Hackathon/frontend/assets/summer/tshirt anime.jpeg" alt="">
               </div>`   
     }
   
