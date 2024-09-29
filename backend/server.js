@@ -5,20 +5,11 @@ const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
 const db = require('./config/db');
 const path = require('path'); 
-const uploadRoutes = require('./routes/uploadRoutes');
-const session = require('express-session');
-const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(session({ secret: 'your-secret', resave: false, saveUninitialized: true }));
-app.use(express.static('public')); 
-app.use('/api', userRoutes)
-
-app.use('/upload', uploadRoutes);
 
 // Routes
 app.use('/auth', authRoutes);
